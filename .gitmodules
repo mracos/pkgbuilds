@@ -7,3 +7,6 @@
 [submodule "phpbrew-git"]
 	path = phpbrew-git
 	url = git+ssh://aur@aur.archlinux.org/phpbrew-git.git
+[submodule "python-azlyrics-git"]
+	path = python-azlyrics-git
+	url = git+ssh://aur@aur.archlinux.org/python-azlyrics-git.git
