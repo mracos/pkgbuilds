@@ -1,0 +1,30 @@
+# Maintainer: Marcos Ferreira <merkkp at gmail dot com>
+
+_gitname=""
+pkgname="${_gitname}-git"
+pkgver=
+pkgrel=1
+pkgdesc=""
+arch=("")
+url=""
+license=("")
+depends=("")
+makedepends=("git")
+provides=("${_gitname}")
+conflicts=("${_gitname}")
+source=("git+https://")
+md5sums=("SKIP")
+
+pkgver() {
+  cd "${_gitname}"
+  git describe --tags --long | sed 's/^v//;s/-/./;s/-/./g'
+}
+
+build() {
+}
+
+package() {
+  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
+
+# vim:set ts=2 sw=2 et:

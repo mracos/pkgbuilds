@@ -1,0 +1,23 @@
+# Maintainer: Marcos Ferreira <merkkp at gmail dot com>
+
+pkgname=""
+pkgver=
+pkgrel=1
+pkgdesc=""
+arch=("")
+url=""
+license=("")
+depends=("")
+makedepends=("")
+provides=("")
+conflicts=("")
+source=("")
+md5sums=("")
+
+build() {
+}
+
+package() {
+}
+
+# vim:set ts=2 sw=2 et:
