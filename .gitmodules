@@ -1,3 +1,6 @@
 [submodule "bpkg-git"]
 	path = bpkg-git
 	url = git+ssh://aur@aur.archlinux.org/bpkg-git.git
+[submodule "choosealicense-cli-git"]
+	path = choosealicense-cli-git
+	url = git+ssh://aur@aur.archlinux.org/choosealicense-cli-git.git
