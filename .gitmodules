@@ -1,6 +1,9 @@
 [submodule "bpkg-git"]
 	path = bpkg-git
 	url = git+ssh://aur@aur.archlinux.org/bpkg-git.git
+[submodule "otf-economica"]
+    path = otf-economica
+    url = git+ssh://aur@aur.archlinux.org/otf-economica.git
 [submodule "choosealicense-cli-git"]
 	path = choosealicense-cli-git
 	url = git+ssh://aur@aur.archlinux.org/choosealicense-cli-git.git
@@ -10,3 +13,6 @@
 [submodule "python-azlyrics-git"]
 	path = python-azlyrics-git
 	url = git+ssh://aur@aur.archlinux.org/python-azlyrics-git.git
+[submodule "python-gogs-client"]
+	path = python-gogs-client
+	url = git+ssh://aur@aur.archlinux.org/python-gogs-client.git
