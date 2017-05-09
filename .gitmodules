@@ -15,4 +15,4 @@
 	url = git+ssh://aur@aur.archlinux.org/python-azlyrics-git.git
 [submodule "python-gogs-client"]
 	path = python-gogs-client
-	url = git+ssh://aur@aur.archlinux.org/python-gogs-client.git
+	url = git+ssh://aur@aur.archlinux.org/python-gogs-client
