@@ -16,3 +16,9 @@
 [submodule "ttf-economica"]
 	path = ttf-economica
 	url = git+ssh://aur@aur.archlinux.org/ttf-economica.git
+[submodule "nodejs-reveal-md"]
+	path = nodejs-reveal-md
+	url = git+ssh://aur@aur.archlinux.org/nodejs-reveal-md.git
+[submodule "iqoption-bin"]
+	path = iqoption-bin
+	url = git+ssh://aur@aur.archlinux.org/iqoption-bin
