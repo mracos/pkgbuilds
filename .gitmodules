@@ -22,3 +22,6 @@
 [submodule "iqoption-bin"]
 	path = iqoption-bin
 	url = git+ssh://aur@aur.archlinux.org/iqoption-bin
+[submodule "phpbrew"]
+	path = phpbrew
+	url = git+ssh://aur@aur.archlinux.org/phpbrew
