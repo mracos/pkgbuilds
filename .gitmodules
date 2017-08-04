@@ -25,3 +25,6 @@
 [submodule "phpbrew"]
 	path = phpbrew
 	url = git+ssh://aur@aur.archlinux.org/phpbrew
+[submodule "php-livereload-git"]
+	path = php-livereload-git
+	url = git+ssh://aur@aur.archlinux.org/php-livereload-git.git
