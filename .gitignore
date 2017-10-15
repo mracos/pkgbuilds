@@ -1,0 +1,56 @@
+### https://raw.github.com/github/gitignore/df7b36ca7621c0bdf748c2d0a0abb792a3a0ccc1/Global/Vim.gitignore
+
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+
+
+### https://raw.github.com/github/gitignore/df7b36ca7621c0bdf748c2d0a0abb792a3a0ccc1/Global/Tags.gitignore
+
+# Ignore tags created by etags, ctags, gtags (GNU global) and cscope
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+GTAGS
+GRTAGS
+GPATH
+GSYMS
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
+
+
+
+### https://raw.github.com/github/gitignore/df7b36ca7621c0bdf748c2d0a0abb792a3a0ccc1/ArchLinuxPackages.gitignore
+
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+pkg/
+src/
+
+
