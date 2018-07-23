@@ -1,0 +1,20 @@
+# Maintainer: Marcos Ferreira <merkkp at gmail dot com>
+
+pkgname="sane-gt68xx-cis3R5B1-firmware"
+pkgver=1
+pkgrel=1
+pkgdesc="Firmware for the sane cis3R5B1 backend"
+arch=("any")
+url=""
+license=()
+depends=("sane")
+provides=("sane-gt68xx-cis3R5B1-firmware")
+conflicts=("sane-gt68xx-cis3R5B1-firmware")
+source=("cis3R5B1.fw")
+md5sums=("SKIP")
+
+package() {
+  install -Dm644 cis3R5B1.f${pkgdir}/usr/share/sane/gt68xx/cis3R5B1.fw"
+}
+
+# vim:set ts=2 sw=2 et:
