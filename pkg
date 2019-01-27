@@ -1,0 +1,20 @@
+#!/bin/bash
+set -euo pipefail
+
+aur:make() {
+    pushd $2 && makepkg -cCrsf && makepkg --printsrcinfo > .SRCINFO && popd
+}
+
+aur:push() {
+    git subtree push --prefix $2 git+ssh://aur@aur.archlinux.org/$2 master
+}
+
+help() {
+    cat "$0" | grep "^.*() {$" | cut -d "(" -f1
+}
+
+if [ ! -z ${1:-} ]; then
+    "$1" "$@"
+else
+    help
+fi
