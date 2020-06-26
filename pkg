@@ -1,8 +1,21 @@
 #!/bin/bash
 set -euo pipefail
 
+local:make() {
+    pushd $2 \
+        && makepkg \
+            --clean \
+            --cleanbuild \
+            --rmdeps \
+            --syncdeps \
+            --force \
+            --noconfirm \
+    && popd
+}
+
 aur:make() {
-    pushd $2 && makepkg -cCrsf && makepkg --printsrcinfo > .SRCINFO && popd
+    local:make $2
+    pushd $2 && makepkg --printsrcinfo > .SRCINFO && popd
 }
 
 aur:push() {
