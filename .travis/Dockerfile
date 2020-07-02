@@ -7,8 +7,8 @@ RUN pacman-key --refresh-keys && \
 
 RUN pacman -S --noconfirm git base-devel
 
-RUN echo "$user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
-        useradd -mU $user && \
+RUN useradd -mU $user && \
+        echo "$user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers && \
         echo "$user:$user" | chpasswd
 
 USER $user
