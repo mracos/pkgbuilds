@@ -1,9 +1,14 @@
+FROM archlinux:latest
+
 ARG user
 
-FROM archlinux:20200306
-
 RUN pacman-key --refresh-keys && \
-        pacman -Syu --noconfirm
+        pacman -Syu --noconfirm reflector && \
+        reflector \
+                --latest 5 \
+                --sort rate \
+                --save /etc/pacman.d/mirrorlist && \
+        pacman -Syu
 
 RUN pacman -S --noconfirm git base-devel
 

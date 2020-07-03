@@ -2,13 +2,15 @@ services:
   - docker
 
 before_install:
-  - docker build -t $USER/archlinux .travis/
+  - docker build \
+    --build-arg user=$USER \
+    -t $USER/archlinux .travis/
 
 script:
   - docker run --rm \
-    --build-arg user=$USER \
     -v $TRAVIS_BUILD_DIR:/home/$USER/pkgbuilds \
-    $USER/archlinux .travis/test-all.sh
+    $USER/archlinux \
+    .travis/test-all.sh
 
 deploy:
   provider: script
