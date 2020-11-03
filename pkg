@@ -9,6 +9,10 @@ aur:push() {
     git subtree push --prefix $2 git+ssh://aur@aur.archlinux.org/$2 master
 }
 
+aur:fix-refusing-to-merge-unrelated-histories() {
+    git subtree pull --prefix $2 --squash git+ssh://aur@aur.archlinux.org/$2 master
+}
+
 help() {
     cat "$0" | grep "^.*() {$" | cut -d "(" -f1
 }
