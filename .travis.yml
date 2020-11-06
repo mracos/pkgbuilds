@@ -12,10 +12,10 @@ script:
     $USER/archlinux \
     .travis/test-all.sh
 
-deploy:
-  provider: script
-  script: .travis/deploy_changed.sh
-  skip_cleanup: true
-  on:
-    branch: master
-    condition: when things changed?
+# deploy:
+#   provider: script
+#   script: .travis/deploy_changed.sh
+#   skip_cleanup: true
+#   on:
+#     branch: master
+#     condition: when things changed?
