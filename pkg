@@ -9,7 +9,7 @@ aur:push() {
     git subtree push --prefix "$2" "git+ssh://aur@aur.archlinux.org/$2" master
 }
 
-aur:fix-refusing-to-merge-unrelated-histories() {
+aur:pull() {
     git subtree pull --prefix "$2" --squash "git+ssh://aur@aur.archlinux.org/$2" master
 }
 
